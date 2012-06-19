@@ -27,10 +27,8 @@ class VideosController extends AppController {
 			$this->layout = "admin_index_layout"; 
 			if(!empty($this->data))
 				{
-					  print_r('<pre>');
-					  print_r($this->data);
-					  print_r('</pre>');
-					  exit;
+					   echo "tese";
+					   
 					  $this->Video->set($this->data);
 					if($this->Video->validates($this->data))
 						{
