@@ -2,7 +2,7 @@
   <div class="title">
     <h5><?php echo $mainheding; ?></h5>
   </div>
-  <?php echo $this->Form->create("Video", array("action"=>"videoadd", "class"=>'mainForm', "id"=>"addvideo", "name"=>"addvideo"));?>
+  <?php echo $this->Form->create("Video", array("action"=>"videoadd", "class"=>'mainForm', "id"=>"addvideo", "name"=>"addvideo", "enctype"=>"multipart/form-data"));?>
   <form action="" class="mainForm">
     <!-- Input text fields -->
     <fieldset>
@@ -23,13 +23,16 @@
           </div>
           <div class="fix"></div>
         </div>
+        
         <div class="rowElem">
-          <label>Source file*:</label>
+          <label>Source file* :</label>
           <div class="formRight">
-         		<?php echo $this->Form->input('Video.source_file',array('type'=>'text','id'=>'req1','maxlength'=>'200','div'=>false,'label'=>false));?> 
+           <?php echo $this->Form->input('Video.source_file',array('type'=>'file','id'=>'req14','div'=>false,'label'=>false));?>
+           <br />valid format.('mp4','mp3').</div>
+          <div class="fix">
           </div>
-          <div class="fix"></div>
         </div>
+         
         <div class="rowElem">
           <label>Container*:</label>
           <div class="formRight">

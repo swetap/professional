@@ -41,10 +41,11 @@
 	 echo $this->Html->script('jquery.listnav.js');
 	 echo $this->Html->script('jquery.sourcerer.js');
 	 echo $this->Html->script('custom.js');
+	  echo $this->Html->script('jquery-ui.min.js');
 	 //echo $this->Html->script('datepicker.js');
 		 
 ?>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> 
+<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>--> 
 <!--<script type="text/javascript" src="http://jzaefferer.github.com/jquery-validation/jquery.validate.js"></script>-->
 </head>
 <body>
